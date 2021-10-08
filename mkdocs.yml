@@ -1,0 +1,47 @@
+site_name: "SchlenderBot docs"
+site_description: "The official SchlenderBot docs"
+site_author: "LenderSchlender"
+
+site_url: "https://docs.schlenderbot.com"
+
+docs_dir: docs/
+repo_name: "SchlenderBot/SchlenderBot-Docs"
+repo_url: "https://github.com/SchlenderBot/SchlenderBot-Docs"
+edit_uri: "edit/main/docs/"
+
+nav:
+    - Home: "index.md"
+    - Tag System:
+        - "tags/index.md"
+
+    - Dashboard: "https://schlenderbot.com/dashboard"
+    - Support Server: "https://schlenderbot.com/server"
+    - Legal:
+        - Privacy: "legal/privacy.md"
+
+theme:
+  name: "material"
+  logo: "https://schlenderbot.com/img/logo.png"
+  favicon: "https://schlenderbot.com/img/logo.png"
+  features:
+      - navigation.indexes
+      - navigation.top
+  palette:
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
+        toggle:
+            icon: material/weather-sunny
+            name: Switch to dark mode
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        toggle:
+            icon: material/weather-night
+            name: Switch to light mode
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+      minify_js: true
+      htmlmin_opts:
+        remove_comments: true
