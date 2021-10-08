@@ -1,1 +1,2 @@
 mkdocs-minify-plugin
+pymdown-extensions>=9.0
